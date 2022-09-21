@@ -4,12 +4,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+   font-family: sans-serif;
+}
 .flex{
     display: flex;
-    flex-direction: ;
 }
-
-
 header{
     /* background-color: blueviolet; */
     color: white;
@@ -27,9 +27,6 @@ header{
 .border-radius{
     border-radius: 20px;
 }
-
-
-
  header .navbar{
     /* background-color: lightcoral; */
     /* vertical-align: middle; */
@@ -53,12 +50,18 @@ header{
     list-style-type: none;
     /* float: right; */
  }
- 
-li a{
-    text-decoration: none;
+ .nav a{
+   text-decoration: none;
     color: white;
-
-} 
+    padding-right: 52px;
+ }
+   a{
+      text-decoration: none;
+   }
+   li{
+    /* color: white; */
+    list-style-type: none;
+   } 
 .navbar .accedi{
     /* background-color: blue; */
     background-color: white;
@@ -73,12 +76,13 @@ li a{
     /* cursor: pointer; */
     border-radius: 20px;
  }
-
- .download, .browser{
+ .download, .browser, .login{
     border: none;
     padding: 12px 21px;
     margin-top: 24px;
     margin-bottom: 79px;
+    margin-right: 25px;
+    border-radius: 20px;
  }
 .download{
     background-color: white;
@@ -86,23 +90,19 @@ li a{
 .browser{
     background-color: black;
 }
-
 .download a{
     color:black;
     text-decoration: none;
+    text-align:center;
 }
 .browser a{
     color: white;
     text-decoration: none;
 }
-
-
  /* ___TEXT SUB NAVBAR___________ */
  header .home{
     /* background-color: aqua; */
-    pad
  }
-
  /* Home header */
  .container h1, .container.home{
     text-align: center;
@@ -118,66 +118,141 @@ li a{
 .reverse{
     flex-direction: row-reverse;
 }
-
 section{
-    background-color: rgb(137, 44, 44);
-
+    /* background-color: rgb(137, 44, 44); */
+    margin-top: 28px;
+    font-size: larger;
 }
 .section-reverse, .light-bk{
-    background-color: burlywood;
+    /* background-color: burlywood; */
 }
-
  section .img{
-    background-color: greenyellow;
-    width: 48%;
-    height: 400px;
+    /* background-color: greenyellow; */
+    width: 60%;
+    /* height: 400px; */
+    margin-top: 64px;
  }
  section .text{
-    background-color: green;
-    width: 48%;
-    height: 400px;
+   /* background-color: green; */
+   width: 40%;
+   /* height: 400px; */
+   padding: 111px;
  }
  /*______________ 4 section__________ */
  .text-comunity{
-    background-color:rgb(19, 252, 101) ;
-    height: 400px;
-
-
+   /* background-color: rgb(19, 252, 101); */ 
+   /* height: 400px; */
+   text-align:center;
+   width: 90%;
+   margin: auto;
  }
  .img-video{
-    background-color: green;
-    height: 400px;
-
+    /* background-color: green; */
+    height: 652px;
  }
-
  .load{
-    background-color: greenyellow;
-    height: 400px;
+    /* background-color: greenyellow; */
+    /* height: 400px; */
  }
  .light-bk{
     padding-top: 70px;
  }
-
  /* ___sezione 5___ */
-
  columns-final{
     flex-direction: row-reverse;
  }
-
  .col-5{
-    width: 600px;
-    height: 900px;
+   width: 600px;
+   /* height: 900px; */
+   padding-top: 116px;
  }
-
  .black{
-    background-color: black;
+    /* background-color: black; */
     flex-grow: 1;
  }
  .brown{
-    background-color: brown;
+    /* background-color: brown; */
     flex-grow: 0;
  }
  .red{
-    background-color: red;
+    /* background-color: red; */
     flex-grow: 0;
  }
+/* _____immagini____________ */
+.where .img{
+   background-image: url('../img/item1.svg');
+   background-size: contain;
+   background-repeat: no-repeat;
+}
+.easy .img{
+   background-image: url('../img/item2.svg');
+   background-size: contain;
+   background-repeat: no-repeat;
+}
+.comunity .img{
+   background-image: url('../img/item3.svg');
+   background-size: contain;
+   background-repeat: no-repeat;
+}
+.activity{
+   background-color: ;
+}
+.activity .img-video{
+   background-image: url('../img/item4-big.svg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 754px;
+}
+.activity .load{
+   text-align: center;
+}
+.load p{
+   background-image: url(../img/stars.svg);
+   background-size: auto;
+   background-repeat: no-repeat;
+   font-size: 1.4rem;
+   margin-top: 71px;
+   text-align: center;
+   background-position: top;
+   padding: 46px;
+   font-weight: bold;
+}
+.wave{
+   width: 100%;
+    background-image: url(../img/wave.svg);
+    background-size: cover;
+    height: 98px;
+    background-color: white;
+    filter: sepia(44%) saturate(50%) hue-rotate(208deg) contrast(1.5);
+    background-size: cover;
+}
+
+.easy, .activity{
+   background-color: rgba(246, 246, 246, 1);
+}
+
+.final-menu{
+   background-color: rgba(35, 39, 42, 1);
+}
+.final-menu h2, .final-menu h3{
+   color: rgba(114, 137, 218, 1);
+}
+.final-menu a{
+   color: white;
+   line-height: 50px;
+}
+.final-menu col-5{
+   width: 600px; */
+    /* height: 900px; */
+    padding-top: 116px;
+    flex-basis: 16%;
+}
+.login{
+   background-color:rgba(114, 137, 218, 1) ;
+   color: white;
+}
+
+.final-menu .container{
+   border-top: 2px solid rgba(114, 137, 218, 1);
+}
+
